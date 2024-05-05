@@ -40,6 +40,25 @@ function MyComponent() {
 }
 ```
 
+### useIsTruncated
+
+Determines if the content of an element is truncated in horizontal direction, e.g. by overflow hidden.
+
+```tsx
+import { useIsTruncated } from 'accessible-hooks';
+
+function MyComponent() {
+    const [ref, isTruncated] = useIsTruncated();
+
+    return (
+        <div ref={ref} style={{ width: '50px', overflow: 'hidden' }}>
+            This is a long text that will be truncated.
+            {isTruncated && <span>... (truncated)</span>}
+        </div>
+    );
+}
+```
+
 ### useTitleWhenTruncated
 
 Sets the title attribute of an element when its text content is horizontally truncated (hidden by overflow).
