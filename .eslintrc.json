@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "env": {
+        "node": false,
+        "browser": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint", "eslint-plugin-jsdoc"],
+    "extends": [
+        "./eslint/.eslintrc.json",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "prettier/prettier": "warn"
+    },
+    "ignorePatterns": ["dist", "node_modules", "public", "vite.config.ts"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
