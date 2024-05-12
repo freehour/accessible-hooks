@@ -1,12 +1,12 @@
 {
     "name": "accessible-hooks",
     "private": false,
-    "version": "0.1.4",
+    "version": "0.1.5",
     "type": "module",
     "description": "Collection of accessibility hooks inspired by react-aria",
     "scripts": {
         "build": "tsc && vite build",
-        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+        "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0"
     },
     "files": [
         "dist"
@@ -15,8 +15,8 @@
     "types": "./dist/index.d.ts",
     "dependencies": {},
     "peerDependencies": {
-        "react": "^18.0.0",
-        "react-dom": "^18.0.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@types/node": "20.12.11",
