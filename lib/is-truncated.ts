@@ -1,6 +1,7 @@
 import type { MutableRefObject } from 'react';
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 
+
 /**
  * Determines if the content of an element is truncated in horizontal direction, e.g. by overflow hidden.
  *

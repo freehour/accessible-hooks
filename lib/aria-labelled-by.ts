@@ -1,9 +1,12 @@
 import type { HTMLAttributes, LabelHTMLAttributes } from 'react';
 import { useId } from 'react';
 
+
 export interface AriaLabelledBy {
+
     /** Props to apply to the label element. */
     labelProps: Pick<LabelHTMLAttributes<HTMLLabelElement>, 'id'>;
+
     /** Props to apply to the field element being labeled. */
     fieldProps: Pick<HTMLAttributes<HTMLElement>, 'aria-labelledby'>;
 }

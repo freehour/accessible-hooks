@@ -1,9 +1,12 @@
 import type { HTMLAttributes, LabelHTMLAttributes } from 'react';
 import { useId } from 'react';
 
+
 export interface LabelFor {
+
     /** Props to apply to the label element. */
     labelProps: Pick<LabelHTMLAttributes<HTMLLabelElement>, 'htmlFor'>;
+
     /** Props to apply to the field element being labeled. */
     fieldProps: Pick<HTMLAttributes<HTMLElement>, 'id'>;
 }
